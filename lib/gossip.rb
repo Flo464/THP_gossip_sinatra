@@ -31,11 +31,10 @@ class Gossip
     		id_gossip = csv_line
     	end 
   	end
-  	return id_gossip
+  	puts id_gossip
   end 
 
 end 
-
 
 
 
