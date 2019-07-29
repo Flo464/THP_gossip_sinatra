@@ -1,4 +1,4 @@
-# THP_gossip_sinatra #
+# THP_gossip_sinatra
 </br>
 ### Welcome devellopers!
 </br>
