@@ -5,14 +5,6 @@
 
   <body>
     <h1>Mon super site de gossip, depuis le dossier views !</h1>
-    <p> Bienvenue connard, on a pas encore codé le lien vers la BDD et on t'emmerde ! En attendant tu peux créer un nouveau gossip <a href="/gossips/new/"> ici </a> </p>
-
-		<% gossips.each do |gossip| %>
-      <p>
-        <%= gossip.author %><br/>
-        <%= gossip.content %>
-      </p>
- 		<% end %>
-
+    <p> Bienvenue connard, on a pas encore codé le lien vers la BDD et on t'emmerde ! En attendant tu peux créer un nouveau gossip <a href="/gossips/new/"> ici </a> et voir tous les gossips <a href="/gossips/all/">ici</a> </p>
   </body>
 </html>

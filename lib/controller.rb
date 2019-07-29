@@ -42,8 +42,8 @@ class ApplicationController < Sinatra::Base
 	redirect '/'
 	end
 
-	get '/' do
-  erb :index, locals: {gossips: Gossip.all}
-end
+	get '/gossips/all/' do
+  	erb :gossips, locals: {gossips: Gossip.all}
+	end
 
 end
