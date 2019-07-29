@@ -16,6 +16,7 @@ The purpose if this project is to practice using the MVC architecture.
   1.
   1.
 </br>
+
 ## Resources
 
 1.
