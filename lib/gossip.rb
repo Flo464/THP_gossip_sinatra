@@ -2,7 +2,7 @@ require 'pry'
 require 'csv'
 
 class Gossip
-	attr_reader :author, :content
+	attr_accessor :author, :content
 
 	def initialize (author, content)
 		@author = author
@@ -10,21 +10,21 @@ class Gossip
 	end 
 
 	def save 
-		CSV.open("db/gossip.csv", "a") do |csv|
+		CSV.open("./db/gossip.csv", "ab") do |csv|
   	csv << [@content, @author]
   end 
 	end
 
 	def self.all
-		all_gossips = []
 
-		CSV.open("db/gossip.csv").each do |ligne|
-			temp = Gossip.new(ligne[0], ligne[1])
-			all_gossips << temp 
-		end 
+  all_gossips = []
 
-		return all_gossips
-	end 
+  CSV.read("./db/gossip.csv").each do |csv_line|
+    all_gossips << Gossip.new(csv_line[0], csv_line[1])
+  end
+  
+  return all_gossips
+end
 
 	def self.destroy(number)
 		gossips_array = CSV.read("db/gossip.csv", {col_sep: ","})
@@ -39,6 +39,7 @@ class Gossip
 	end 
 
 end 
+
 
 
 
