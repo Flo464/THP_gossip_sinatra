@@ -1,6 +1,6 @@
 # THP_gossip_sinatra
 </br>
-### Welcome devellopers!
+## Welcome devellopers!
 </br>
 </br>
 This repo is part of a project handout for **The Hacking Project** (an intensive 3 month develloper course available in france). </br>
