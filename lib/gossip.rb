@@ -24,17 +24,15 @@ class Gossip
 	end
 
 
-	def self.destroy(number)
-		gossips_array = CSV.read("db/gossip.csv", {col_sep: ","})
-		new_array = gossips_array.delete_at(number)
-		
-		CSV.open('db/gossip.csv', "w") do |csv|
-			
-			new_array.each do |line|
-				csv << line
-			end 
-		end 
-	end 
+	def self.find(id)
+		id_gossip = " "
+  	CSV.read("./db/gossip.csv").each do |csv_line|
+    	if csv_line.index = id 
+    		id_gossip = csv_line
+    	end 
+  	end
+  	return id_gossip
+  end 
 
 end 
 
