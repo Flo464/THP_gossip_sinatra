@@ -4,9 +4,9 @@
 	<title>Show me one gossip</title>
 </head>
 <body>
-	<h1> Voici le potin N° <%= id %></h1>
+	<h1> Voici le potin N° <%=params[:id]%></h1>
 	<p><%= found.content %></p>
 	<p>Gossip rapporté par <%= found.author %></p>
-	<p> <a href="/"></a> Retour à l'accueil</p>
+	<p> <a href="/http://localhost:4567/">Retour à l'accueil</a> </p>
 </body>
 </html>

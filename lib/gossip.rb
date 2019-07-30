@@ -25,13 +25,7 @@ class Gossip
 
 
 	def self.find(id)
-		id_gossip = " "
-  	CSV.read("./db/gossip.csv").each do |csv_line|
-    	if csv_line.index = id 
-    		id_gossip = csv_line
-    	end 
-  	end
-  	puts id_gossip
+		Gossip.all[id.to_i - 1]
   end 
 
 end 

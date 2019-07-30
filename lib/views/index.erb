@@ -5,13 +5,17 @@
 
   <body>
     <h1>Mon super site de gossip, depuis le dossier views !</h1>
-    <p> Bienvenue connard, on a pas encore codé le lien vers la BDD et on t'emmerde ! En attendant tu peux créer un nouveau gossip <a href="/gossips/new/"> ici </a> et voir tous les gossips <a href="/gossips/all/">ici</a> </p>
+    <p> Bienvenue connard, on a pas encore codé le lien vers la BDD et on t'emmerde ! En attendant tu peux créer un nouveau gossip <a href="/gossips/new/"> ici </a> 
 
-    <p>D'ailleurs, si tu veux rechercher un potin c'est ici :
-    	<form action='/gossips/:id' method='GET'>
-      	<input type='text' name='gossip_search'/>
-      	<input type='submit'/>
-    	</form>
-    </p>
+
+
+		<% gossips.each do |gossip| %>
+      <p>
+        <%= gossip.author %><br/>
+        <%= gossip.content %>
+        <a href="/gossips/:id">lien</a>
+      </p>
+ 		<% end %>
+ 
   </body>
 </html>
