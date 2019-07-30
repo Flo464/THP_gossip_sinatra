@@ -7,7 +7,7 @@
 </br>
 </br>
 This repo is part of a project handout for The Hacking Project(https://www.thehackingproject.org), an intensive 3 month develloper course available in france. </br>
-The purpose if this project is to practice using the MVC architecture. 
+The purpose if this project is to practice using the MVC architecture, the use of sinatra and shotgun as well as creating local servers.
 </br>
 
 ## File Plan
