@@ -1,4 +1,4 @@
-[](R1V13RA.png!)
+![](R1V13RA.png)
 
 # THP_gossip_sinatra
 </br>
